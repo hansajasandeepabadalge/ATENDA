@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+    <div class="top-bar">Year 1 GG</div>
+
+    <div class="container">
+        <!-- Date Picker -->
+        <div class="date-picker">
+            <div class="date">Oct 28</div>
+            <div class="date">Oct 29</div>
+            <div class="date active">Oct 30</div>
+            <div class="date">Oct 31</div>
+            <div class="date">Nov 01</div>
+        </div>
+
+        <!-- Attendance List -->
+        <div class="attendance-list">
+            <div class="attendance-item">
+                <span class="attendance-name">Hansaja Sandeepa</span>
+                <select class="attendance-status">
+                    <option value="P">Present</option>
+                    <option value="A">Absent</option>
+                    <option value="L">Late</option>
+                    <option value="E">Early</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Update Button -->
+        <button class="update-button">Update Attendance</button>
+    </div>
+
+</body>
+</html>
