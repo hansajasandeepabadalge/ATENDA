@@ -32,4 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.add('active');
         });
     });
+
+    // Add event listeners to attendance status buttons
+    const statusButtons = document.querySelectorAll('.status-button');
+
+    statusButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Toggle active class on the clicked button
+            button.classList.toggle('active');
+        });
+    });
 });

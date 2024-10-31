@@ -24,14 +24,22 @@ body {
 
 /* Container */
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
     max-width: 500px;
     margin: auto;
     background: white;
     overflow: hidden;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #1e88e5;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* Date Picker */
@@ -49,6 +57,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
     color: #1e88e5;
+    border: 1px solid #1e88e5;
 }
 
 .date.active {
@@ -58,50 +67,58 @@ body {
 
 /* Attendance List */
 .attendance-list {
-    padding: 20px;
+    padding: 10px 5px;
 }
 
 .attendance-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center; /* Center the text */
-    padding: 10px 0;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.attendance-item:last-child {
-    border-bottom: none;
+    margin-bottom: 10px;
+    background-color: #f4f6f8;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .attendance-name {
-    font-size: 1em;
-    color: #333;
+    color: #404040;
+    font-size: 14px;
 }
 
 .attendance-status {
-    width: 100px;
-    padding: 4px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-    background: white;
-    font-size: 14px;
-    color: #555;
-    cursor: pointer;
+    display: flex;
+    gap: 10px;
 }
 
+.status-button {
+    padding: 3px 18px;
+    border: 1px solid #1e88e5;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #1e88e5;
+    font-size: 14px;
 
-/* Button */
+}
+
+.status-button.active {
+    background-color: #1e88e5;
+    color: #ffffff;
+}
+
+/* Update Button */
 .update-button {
+    display: block;
     width: 100%;
-    padding: 15px;
-    text-align: center;
+    padding: 10px;
     background-color: #1e88e5;
     color: white;
-    font-size: 1em;
-    font-weight: bold;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .update-button:hover {
